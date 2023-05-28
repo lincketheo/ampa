@@ -10,7 +10,6 @@ using namespace std;
 FileScanner::FileScanner(const string &inputFileName,
                          const string &outputFileName
 ) : Scanner(
-    EOF,
     openAndVerifyInputFile(inputFileName),
     openAndVerifyOutputFile(outputFileName)
 ) {};

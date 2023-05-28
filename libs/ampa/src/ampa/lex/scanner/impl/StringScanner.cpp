@@ -10,7 +10,6 @@ StringScanner::StringScanner(
     std::unique_ptr<std::ostream> outputStream
 )
     : Scanner(
-    ';',
     std::make_unique<std::istringstream>(inputString),
     std::move(outputStream)
 ) {};
