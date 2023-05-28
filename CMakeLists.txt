@@ -13,9 +13,8 @@ add_subdirectory(libs/ampa)
 list(APPEND PROJECT_LIBS ampa)
 ########
 
-######## Build Executable
-add_executable(proof main.cpp)
-target_link_libraries(proof ${PROJECT_LIBS})
+######## Build Executables
+add_subdirectory(tools)
 ########
 
 ######## Tests
