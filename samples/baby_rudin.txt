@@ -1,0 +1,11 @@
+Definition {
+    let B : Set
+    let A : Set
+    1. If (x \in A), then (x : member(A))
+    2. If !(x \in A), then (x !: member(A))
+
+    If there exists x such that x \in A, then A is nonempty
+    If A is not nonempty, A is empty
+    If 
+}
+

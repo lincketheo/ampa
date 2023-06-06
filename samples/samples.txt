@@ -1,0 +1,9 @@
+If A is a set and x $\in$ A then x is a member of A.
+
+###### Generation rules
+
+###### Valid
+A is a set
+x in A
+x is a member of A
+######

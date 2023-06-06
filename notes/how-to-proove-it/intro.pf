@@ -1,0 +1,57 @@
+Preamble
+```
+type Nat
+type prime
+```
+
+Conjecture 1
+Suppose n is an integer larger than 1 and n is prime. Then 2^n - 1 is prime
+
+```
+val conj1 : Conjecture = (n) -> {
+    let n 
+
+    if(n) {
+        n : Nat
+        n > 1
+        n : prime
+    } then {
+        not { 
+            (2**n - 1) : prime
+        }
+    }
+}
+```
+
+Conjecture 2
+Supppose n is an integer larger than 1 and n is not prime. Then 2^n - 1 is not prime
+
+```
+val conj2 : Conjecture = (n) -> {
+    let n 
+
+    if(n) {
+        n : Nat
+        n > 1
+        not {
+            n : prime 
+        }
+    } then {
+        not { 
+            (2**n - 1) : prime
+        }
+    }
+}
+```
+
+Proof that conjecture 1 is false
+```
+val thm1 : Theorem = {
+    not conj1 
+} 
+
+val proof1 : Proof = Proof(thm1) {
+    let 11 : 
+}
+```
+
