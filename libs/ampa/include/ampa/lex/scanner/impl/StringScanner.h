@@ -13,7 +13,6 @@
 #include <memory>
 
 class StringScanner : public Scanner {
-private:
 public:
   StringScanner() = delete;
   explicit StringScanner(

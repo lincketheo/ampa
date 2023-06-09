@@ -10,8 +10,8 @@ FetchContent_MakeAvailable(googletest)
 ######## Testing Config
 enable_testing()
 add_executable(tests
-        ampa/lex/scanner/ScannerTest.cpp
-        )
+        ampa/lex/scanner/impl/ScannerTest.cpp
+        ampa/lex/lexicon/impl/SimpleMapLexiconTest.cpp)
 target_link_libraries(
         tests
         GTest::gtest_main
