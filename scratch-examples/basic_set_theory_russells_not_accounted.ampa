@@ -1,0 +1,50 @@
+type Any
+type Set : Any
+type Nat : Any
+
+def membership (in) {
+  let x be an Any
+  let a be a Set
+
+  allow {
+    x in a 
+  }
+}
+
+let a : Set
+let x : Nat
+x in a
+
+proposition {
+   x in a
+}
+
+statement(true) {
+  x in a 
+}
+
+statement(false) {
+  x not in a
+}
+
+
+#### Compiles
+
+
+#### Does not compile
+let a : Set
+let x : Nat
+
+x in a
+
+
+
+
+def "axiom of extensionality" {
+  let a be a specific Set
+  let b be a specific Set
+
+  let x be any Set such that {
+    x in a
+  }
+}

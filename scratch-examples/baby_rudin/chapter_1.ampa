@@ -1,0 +1,4 @@
+type Any
+type Set : Any
+
+definition membership (in)
